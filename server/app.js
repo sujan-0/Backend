@@ -19,7 +19,7 @@ app.use(express.static("public"));
 app.use(cookieParser());
 
 // Mount the user routes under /api/v1
-app.use('/api/v1', userRouter); 
+app.use('/api/v1/users', userRouter); 
 
 connectDB()
   .then(() => {
